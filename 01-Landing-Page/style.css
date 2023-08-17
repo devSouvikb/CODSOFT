@@ -1,0 +1,456 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 62.5%;
+  background-color: var(--light-bg-color);
+}
+
+:root {
+  --primary-color: #3882f6;
+  --dark-bg-color: #1f2937;
+  --light-bg-color: #e8f1fa;
+  --primary-txt-color: #0f151d;
+  --secondary-txt-color: #0f151dcc;
+  ---txt-color: #ffffffb3;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.icon-gap {
+  margin-left: 5px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.nav-container,
+.hero,
+.discover,
+.parallax-container,
+.about,
+.contact,
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* fonts */
+.main-container {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 7.2rem;
+  letter-spacing: 2px;
+}
+
+span {
+  font-size: 6.4rem;
+  letter-spacing: 6px;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* header */
+header {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, #090d12ed, #0f151d60),
+    url(./assets/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* navbar */
+nav {
+  width: 100%;
+  height: 10%;
+  border-bottom: 2px solid var(---txt-color);
+  background-color: #090d12a4;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-link-list {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-link-item a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--light-bg-color);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-item a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-link-item a:hover::after {
+  width: 100%;
+}
+
+.nav-link-item a:hover {
+  color: var(--primary-color);
+}
+
+.active a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.active a::after {
+  width: 100% !important;
+}
+
+.menue-icon {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  display: none;
+}
+
+/* hero section */
+.hero {
+  height: 90%;
+  color: var(--light-bg-color);
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  width: 80%;
+}
+
+.hero-container h3 {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  letter-spacing: 4px;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.hero-container h3::before {
+  content: "";
+  position: absolute;
+  left: -5rem;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  height: 4px;
+  width: 4rem;
+  background-color: var(--light-bg-color);
+}
+
+.btn-primary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 8px 24px;
+  background-color: var(--primary-color);
+  color: var(--light-bg-color);
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+}
+
+/* discover section */
+.discover {
+  padding: 80px 0;
+  color: var(--primary-txt-color);
+  text-align: center;
+}
+
+.sub-heading {
+  color: var(--secondary-txt-color);
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.discover-cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.discover-card {
+  height: 500px;
+  width: 350px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.discover-card img {
+  height: 440px;
+  width: 350px;
+}
+
+.discover-card-txt {
+  padding: 10px 15px;
+}
+
+.discover-card-icon {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+/* prallax section */
+.prallax {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to left, #090d12d6, #0f151d60),
+    url(./assets/maldives-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.parallax-container {
+  color: var(--light-bg-color);
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parallax-txt-container {
+  width: 60%;
+}
+
+.parallax-txt-container p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/* about section */
+.about {
+  padding: 80px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.about-left-container {
+  background-color: var(--dark-bg-color);
+  color: var(--light-bg-color);
+  padding: 40px;
+}
+
+.about-description {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 60px;
+  background-color: #7a7a7a34;
+  padding: 10px 30px;
+}
+
+.about-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.right-card-txt {
+  height: 280px;
+  width: 280px;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-card-txt h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-icons {
+  color: var(--primary-color);
+}
+
+.right-card-img-one,
+.right-card-img-two {
+  height: 280px;
+  width: 280px;
+  background-image: url(./assets/dubai-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-card-img-two {
+  background-image: url(./assets/amstradam-img.jpg);
+}
+
+/* contact section */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-card {
+  height: 300px;
+  width: 300px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  color: var(--primary-color);
+}
+
+/* footer */
+footer {
+  background-color: var(--dark-bg-color);
+  padding: 40px 0;
+  color: var(--light-bg-color);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links h3,
+.footer-icons h3 {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(---txt-color);
+}
+
+.footer-icon + .footer-icon {
+  margin-left: 20px;
+}
+
+.footer-icon {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  padding: 8px 12px;
+  font-size: 1.6rem;
+  color: var(--primary-txt-color);
+}
+
+input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.footer-btn-icon {
+  font-size: 2.4rem;
+}
+
+.btn-input {
+  padding: 4px 16px;
+  border-radius: 4px;
+}
