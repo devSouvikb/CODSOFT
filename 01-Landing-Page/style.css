@@ -266,3 +266,34 @@ nav {
   color: var(--primary-color);
   margin-right: 5px;
 }
+
+/* prallax section */
+.prallax {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to left, #090d12d6, #0f151d60),
+    url(./assets/maldives-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.parallax-container {
+  color: var(--light-bg-color);
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parallax-txt-container {
+  width: 60%;
+}
+
+.parallax-txt-container p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
