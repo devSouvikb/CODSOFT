@@ -368,3 +368,32 @@ nav {
 .right-card-img-two {
   background-image: url(./assets/amstradam-img.jpg);
 }
+
+/* contact section */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-card {
+  height: 300px;
+  width: 300px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  color: var(--primary-color);
+}
