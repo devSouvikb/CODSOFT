@@ -226,3 +226,43 @@ nav {
   color: var(--primary-color);
   outline: 2px solid var(--primary-color);
 }
+
+/* discover section */
+.discover {
+  padding: 80px 0;
+  color: var(--primary-txt-color);
+  text-align: center;
+}
+
+.sub-heading {
+  color: var(--secondary-txt-color);
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.discover-cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.discover-card {
+  height: 500px;
+  width: 350px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.discover-card img {
+  height: 440px;
+  width: 350px;
+}
+
+.discover-card-txt {
+  padding: 10px 15px;
+}
+
+.discover-card-icon {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
