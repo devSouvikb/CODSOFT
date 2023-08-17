@@ -297,3 +297,74 @@ nav {
   margin-top: 10px;
   margin-bottom: 50px;
 }
+
+/* about section */
+.about {
+  padding: 80px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.about-left-container {
+  background-color: var(--dark-bg-color);
+  color: var(--light-bg-color);
+  padding: 40px;
+}
+
+.about-description {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 60px;
+  background-color: #7a7a7a34;
+  padding: 10px 30px;
+}
+
+.about-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.right-card-txt {
+  height: 280px;
+  width: 280px;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-card-txt h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-icons {
+  color: var(--primary-color);
+}
+
+.right-card-img-one,
+.right-card-img-two {
+  height: 280px;
+  width: 280px;
+  background-image: url(./assets/dubai-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-card-img-two {
+  background-image: url(./assets/amstradam-img.jpg);
+}
