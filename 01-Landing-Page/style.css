@@ -251,6 +251,11 @@ nav {
   width: 350px;
   background-color: #fff;
   text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.discover-card:hover {
+  box-shadow: 6px 6px 8px #0f151d4e;
 }
 
 .discover-card img {
